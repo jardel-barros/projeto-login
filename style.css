@@ -53,7 +53,7 @@ section#login
 section#login > div#imagen
 {
     display: block;
-    background: #858781 url('/imagens1/pre.jpg');
+    background: #858781 url('imagens1/pre.jpg');
     background-size: cover;
     background-position: left bottom;
     height: 200px;
@@ -61,7 +61,6 @@ section#login > div#imagen
 
 section#login > div#formulario
 {
-    margin: 5px;
     display: block;
     padding: 10px;
 }
@@ -75,33 +74,6 @@ div#formulario > h1
 div#formulario > p
 {
     font-size: 0.8em;
-}
-
-form > div.campo{
-    background-color: #858781;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
-}
-
-div.campo > label{
-    display: none;
-}
-
-div.campo > i
-{
-    color: rgb(184, 30, 10);
-    background-color: black;
-    font-size: 2em;
-    width: 40px;
-    padding: 5px;
-}
-
-div.campo > input/*minuto 4*/
-{
-
 }
 
 form > input[type=submit]{
@@ -142,3 +114,41 @@ form > a.botao:hover{
 form > a.botao > i{
     font-size: 0.8em;
 }
+
+form > div.campo{
+    background-color: #858781;
+    border: 2px solid #858781;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > i
+{
+    color: rgb(184, 30, 10);
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input
+{
+    background-color: rgb(58, 211, 211);
+    font-size: 1em;
+    width: calc(100% - 54px);
+    transform: translateY(-12px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+/* minuto 08*/
+
+
