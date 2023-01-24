@@ -37,7 +37,6 @@ section#login
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /* Arredondar imagen*/
 
     background-color: white;
@@ -46,6 +45,7 @@ section#login
     border-radius: 20px;
     box-shadow: 2px 2px 10px black;
 
+    transform: translate(-50%, -50%);
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }
@@ -143,12 +143,16 @@ div.campo > input
     background-color: rgb(58, 211, 211);
     font-size: 1em;
     width: calc(100% - 54px);
-    transform: translateY(-12px);
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-12px);
 }
+ div.campo > input:focus-within
+ {
+     background-color: white;
+ }
 /* minuto 08*/
 
 
